@@ -1,4 +1,4 @@
-baseurl = "https://lampk.github.io/"
+baseurl = "https://lampk.github.io/course_Epidemiology"
 title = "Dịch tễ học ứng dụng"
 languageCode = "en-us"
 
@@ -38,8 +38,8 @@ pygmentsStyle = "vs"
     name = "Chương trình"
     weight = 2
   [[menu.main]]
-    url = "/posts/"
-    name = "Thông báo"
+    url = "/presentation/"
+    name = "Bài giảng"
     weight = 3
 
   # Footer

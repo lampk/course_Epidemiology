@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Khoá học Dịch tễ học ứng dụng on Dịch tễ học ứng dụng</title>
-    <link>https://lampk.github.io/</link>
+    <link>https://lampk.github.io/course_Epidemiology/</link>
     <description>Recent content in Khoá học Dịch tễ học ứng dụng on Dịch tễ học ứng dụng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 — Phùng Khánh Lâm.</copyright>
     
-	<atom:link href="https://lampk.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lampk.github.io/course_Epidemiology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Chương trình (dự kiến)</title>
-      <link>https://lampk.github.io/agenda/</link>
+      <title>Bài giảng</title>
+      <link>https://lampk.github.io/course_Epidemiology/presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lampk.github.io/agenda/</guid>
+      <guid>https://lampk.github.io/course_Epidemiology/presentation/</guid>
+      <description>Phân phối thống kê</description>
+    </item>
+    
+    <item>
+      <title>Chương trình (dự kiến)</title>
+      <link>https://lampk.github.io/course_Epidemiology/agenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lampk.github.io/course_Epidemiology/agenda/</guid>
       <description>Thời gian Từ ngày 06/05/2019 đến 07/06/2019
 Giảng viên Phùng Khánh Lâm, BS, TS Nghiên cứu viên sau tiến sĩ, chuyên viên phân tích thống kê
 Nhóm Sinh thống kê (phòng 306)
@@ -29,10 +38,10 @@ Giới thiệu và mục tiêu Từ khi ra đời, y khoa hiện đại đã gó
     
     <item>
       <title>Giới thiệu</title>
-      <link>https://lampk.github.io/about/</link>
+      <link>https://lampk.github.io/course_Epidemiology/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lampk.github.io/about/</guid>
+      <guid>https://lampk.github.io/course_Epidemiology/about/</guid>
       <description>Tổ chức Khoá học được tổ chức bởi Viện Pasteur TP Hồ Chí Minh.</description>
     </item>
     

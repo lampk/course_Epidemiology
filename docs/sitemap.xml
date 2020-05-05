@@ -3,23 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lampk.github.io/categories/</loc>
+    <loc>https://lampk.github.io/course_Epidemiology/presentation/</loc>
   </url>
   
   <url>
-    <loc>https://lampk.github.io/agenda/</loc>
+    <loc>https://lampk.github.io/course_Epidemiology/categories/</loc>
   </url>
   
   <url>
-    <loc>https://lampk.github.io/about/</loc>
+    <loc>https://lampk.github.io/course_Epidemiology/agenda/</loc>
   </url>
   
   <url>
-    <loc>https://lampk.github.io/</loc>
+    <loc>https://lampk.github.io/course_Epidemiology/about/</loc>
   </url>
   
   <url>
-    <loc>https://lampk.github.io/tags/</loc>
+    <loc>https://lampk.github.io/course_Epidemiology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lampk.github.io/course_Epidemiology/post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lampk.github.io/course_Epidemiology/tags/</loc>
   </url>
   
 </urlset>
