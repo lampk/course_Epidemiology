@@ -10,3 +10,5 @@ title: Khoá học Dịch tễ học ứng dụng
 
 ## Thông báo
 
+Để xem thông báo, [click vào đây](https://lampk.github.io/course_Epidemiology/posts/).
+

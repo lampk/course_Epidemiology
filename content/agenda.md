@@ -22,7 +22,7 @@ CV: https://lampk.github.io
 
 ## Website
 
-https://lampk.github.io/course_DataAnalysis/ 
+https://lampk.github.io/course_Epidemiology/index.html 
 
 ## Giới thiệu và mục tiêu
 
