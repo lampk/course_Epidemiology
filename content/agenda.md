@@ -22,15 +22,22 @@ CV: https://lampk.github.io/cv/
 
 ## Lịch học dự kiến
 
-* Ngày 06/05/2020
-        + 08g30 - 11g30: Phân phối thống kê
-        + 13g30 - 16g30: Kiểm định giả thuyết
-* Ngày 13/05/2020
-        + 08g30 - 11g30: Khoảng tin cậy
-        + 13g30 - 16g30: Sai lệch và nhiễu trong nghiên cứu dịch tễ
-* Ngày 20/05/2020
-        + 08g30 - 11g30: Phân tích tương quan
-        + 13g30 - 16g30: Phân tích hồi qui
-* Ngày 27/05/2020
-        + 08g30 - 11g30: Lựa chọn thiết kế nghiên cứu 
-        + 13g30 - 16g30: Phân tích số liệu
+Ngày 06/05/2020
+
+* 08g30 - 11g30: Phân phối thống kê
+* 13g30 - 16g30: Kiểm định giả thuyết
+
+Ngày 13/05/2020
+
+* 08g30 - 11g30: Khoảng tin cậy
+* 13g30 - 16g30: Sai lệch và nhiễu trong nghiên cứu dịch tễ
+
+Ngày 20/05/2020
+
+* 08g30 - 11g30: Phân tích tương quan
+* 13g30 - 16g30: Phân tích hồi qui
+
+Ngày 27/05/2020
+
+* 08g30 - 11g30: Lựa chọn thiết kế nghiên cứu 
+* 13g30 - 16g30: Phân tích số liệu
