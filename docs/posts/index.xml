@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Dịch tễ học ứng dụng</title>
+    <link>https://lampk.github.io/course_Epidemiology/posts/</link>
+    <description>Recent content in Posts on Dịch tễ học ứng dụng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 — Phùng Khánh Lâm.</copyright>
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lampk.github.io/course_Epidemiology/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slide Bài giảng 1</title>
+      <link>https://lampk.github.io/course_Epidemiology/posts/2020/05/slide-b%C3%A0i-gi%E1%BA%A3ng-1/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lampk.github.io/course_Epidemiology/posts/2020/05/slide-b%C3%A0i-gi%E1%BA%A3ng-1/</guid>
+      <description>Link đến slide bài giảng &amp;ldquo;Phân phối thống kê&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>

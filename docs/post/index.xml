@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 — Phùng Khánh Lâm.</copyright>
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lampk.github.io/course_Epidemiology/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Slide Bài giảng 1</title>
+      <link>https://lampk.github.io/course_Epidemiology/post/2020-05-06-slide-baigiang01/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lampk.github.io/course_Epidemiology/post/2020-05-06-slide-baigiang01/</guid>
+      <description>Link đến slide bài giảng &amp;ldquo;Phân phối thống kê&amp;rdquo;</description>
+    </item>
     
   </channel>
 </rss>
