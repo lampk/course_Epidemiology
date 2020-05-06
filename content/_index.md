@@ -10,5 +10,5 @@ title: Khoá học Dịch tễ học ứng dụng
 
 ## Bài giảng
 
-Để xem bài giảng, [click vào đây](https://lampk.github.io/course_Epidemiology/presentation/).
+Để xem bài giảng, [click vào đây](https://lampk.github.io/course_Epidemiology/material/).
 
