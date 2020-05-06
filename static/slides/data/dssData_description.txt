@@ -1,0 +1,28 @@
+The dataset contains selected variables from 512 patients who were randomized to three different fluid Solutions for resuscitation in dengue shock syndrome.
+
+Variables:
+studyno           - Study Number
+Fluid             - Randomised blinded fluid for initial resuscitation
+age                   
+sex               
+day.ill           - day of illness at enrolment – earlier is often worse.     
+wt                - weight  
+adm.pp            - Admission Pulse Pressure – lower is worse         
+resps             - Respiration rate at admission      
+adm.bleed         - Any bleeding up to enrolment (none,mild,mod,severe) 
+hct1              - Haematocrit at enrolment (higher is worse)
+plat1             - Platelet at enrolment (lower is worse)
+hospdays          - Total days in hospital     
+hospital.bleeding - Any new bleeding after enrolment            
+clinical_overload - Significant accumulation of fluid as a consequence of disease 
+	            or treatment (yes, no)
+outcome           - Survived or dead
+
+In those with moderate severity at enrolment (PP >10) they could receive any of the 3 fluids, but in those that were more severe at presentation (PP <=10) they could only receive either dextran or starch. 
+
+-----
+Data source: Dr. Bridget Wills <bwills@oucru.org>
+
+Disclaimer: 
+This data is for OUCRU teaching purposes only and may contain "didactic" modifications to the original dataset.
+Distribution of the data or usage outside of the course not allowed without prior approval.  
