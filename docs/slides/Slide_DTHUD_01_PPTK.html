@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Dịch tễ học ứng dụng</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Phùng Khánh Lâm, BS, TS" />
+    <meta name="date" content="2020-05-06" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="lampk.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Dịch tễ học ứng dụng
+## PHÂN PHỐI THỐNG KÊ
+### Phùng Khánh Lâm, BS, TS
+### </br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh
+### </br> 2020-05-06
+
+---
+
+
+
+
+
+
+# Nội dung
+
+* Biến số nghiên cứu
+
+* Phân phối thống kê
+    
+* Chỉ số thống kê
+
+---
+class: inverse, center, middle
+
+# Biến số nghiên cứu
+
+---
+
+## Cấu trúc dữ liệu
+
+--
+
+Một __bảng dữ liệu__ (dataset) chứa các __giá trị__ (value)
+
+--
+
+Mỗi __giá trị__ thuộc một __biến số__ (variable) và một __đơn vị quan sát__ (observational unit)
+
+--
+
+Một __biến số__ bao gồm tất cả các __giá trị__ có cùng __thuộc tính__ (attribute)
+
+--
+
+Mã số | Ngày vào NC | Ngày bệnh | Giới tính | HCT lúc vào NC | HCT theo dõi |
+------|-------------|-----------|-----------|----------------|--------------|
+001   | 2018-06-06  | 4         | Nữ        | 37             | 48           |
+002   | 2018-08-29  | 6         | Nam       | 51             | 35           |
+003   | 2018-05-30  | 3         | Nam       | 31             | 41           |
+
+---
+
+## Một bảng dữ liệu "gọn gàng" (tidy data)
+
+--
+
+Mỗi __biến số__ tạo thành một __cột__
+
+Mỗi __đơn vị quan sát__ tạo thành một __hàng__
+
+Mỗi loại __đối tượng quan sát__ tạo thành một __bảng__
+
+Nếu có nhiều bảng, mỗi bảng có __cột chung__ để có thể kết nối với nhau
+
+--
+
+Mã số | Ngày vào NC | Ngày bệnh | Giới tính | HCT | Thời điểm HCT |
+------|-------------|-----------|-----------|-----|---------------|
+001   | 2018-06-06  | 4         | Nữ        | 37  | Vào NC        |
+001   | 2018-06-06  | 4         | Nữ        | 48  | Theo dõi      |
+002   | 2018-08-29  | 6         | Nam       | 51  | Vào NC        |
+002   | 2018-08-29  | 6         | Nam       | 35  | Theo dõi      |
+003   | 2018-05-30  | 3         | Nam       | 31  | Vào NC        |
+003   | 2018-05-30  | 3         | Nam       | 41  | Theo dõi      |
+
+---
+
+## Phân loại biến số
+
+--
+
+Có những loại biến số nào?
+
+---
+
+## Phân loại biến số
+
+Theo bản chất của biến số
+
+--
+
+**Nhị giá** - có 2 giá trị:  tử vong
+
+**Phân nhóm** -  có hơn 2 giá trị: quốc gia, loại dịch truyền
+
+**Thứ tự** - các giá trị có thứ tự: nhóm tuổi, độ nặng của bệnh
+                  
+**Liên tục** - có đơn vị: tuổi, nhiệt độ
+
+---
+
+## Phân loại biến số
+
+Theo vai trò của biến số
+
+--
+
+**Phụ thuộc**
+
+**Độc lập**
+
+**Yếu tố gây nhiễu**
+
+---
+
+## Lựa chọn biến số nghiên cứu
+
+--
+
+### Biến số chính (phụ thuộc/độc lập)
+
+Dựa vào câu hỏi nghiên cứu/giả thuyết nghiên cứu
+
+### Yếu tố gây nhiễu 
+
+Dựa vào y văn/kiến thức chuyên ngành
+
+Dựa vào bộ dữ liệu sẵn có
+
+**_Số lượng biến số thường bị giới hạn bởi cỡ mẫu và đặc điểm của biến số phụ thuộc_**
+
+---
+class: inverse, center, middle
+
+# Phân phối thống kê
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+--
+
+Dân số 1,000,000 người.
+
+Khả năng bị tăng huyết áp là 20%.
+
+Người không bị tăng huyết áp có khả năng nhập viện là 1%.
+
+Người bị tăng huyết áp có khả năng nhập viện là 2%.
+
+Các nghiên cứu tiến hành trong dân số này (khảo sát trong cộng đồng và tại bệnh viện) với các cỡ mẫu khác nhau.
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension1-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension2-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension3-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension4-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension5-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension6-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension7-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension8-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension9-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension10-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension11-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tỉ lệ tăng huyết áp
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/hypertension12-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Phân phối thống kê
+
+--
+
+Anh chị hiểu như thế nào về phân phối thống kê ?
+
+--
+
+&lt;img src="figures/thongkemota_05.png" width="800" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Phân phối thống kê
+
+* Mô tả các giá trị có thể có của một biến số
+
+* Tần suất/khả năng xuất hiện của mỗi giá trị
+
+* Là cơ sở cho các phép kiểm định, mô hình thống kê
+
+* Phân phối bình thường (normal distribution) rất phổ biến
+    + Đặc tính về mặt toán học (trung bình, độ lệch chuẩn)
+    + Là cơ sở của rất nhiều các phép kiểm định, mô hình thống kê
+    + Định luật giới hạn trung tâm (central limit theorem)
+
+---
+
+## Phân phối Bernoulli
+
+.pull-left[
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+.pull-right[
+
+Thử nghiệm chỉ có hai giá trị (thành công/thất bại) với xác suất thành công `\(p\)`
+
+Tham số: `\(p\)` ( `\(0 \leq p \leq 1\)` )
+
+Trung bình: `\(p\)`
+
+Phương sai: `\(p(1-p)\)`
+
+]
+
+---
+
+## Phân phối Nhị thức (Binomial)
+
+.pull-left[
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+.pull-right[
+
+Số lần thành công khi thực hiện `\(n\)` thử nghiệm Bernoulli với xác suất thành công `\(p\)`
+
+Tham số: 
+
+* Xác suất thành công: `\(p\)` ( `\(0 \leq p \leq 1\)` )
+* Số lần thử nghiệm: `\(n\)` 
+
+Trung bình: `\(np\)`
+
+Phương sai: `\(np(1-p)\)`
+
+]
+---
+
+## Phân phối Poisson
+
+.pull-left[
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+.pull-right[
+
+Số biến cố độc lập xảy ra trong một khoảng thời gian
+
+Tham số: 
+
+* Tốc độ xảy ra biến cố: `\(\lambda\)` ( `\(\in \mathbb{R}^+\)` )
+
+Trung bình: `\(\lambda\)`
+
+Phương sai: `\(\lambda\)`
+
+]
+
+---
+
+## Phân phối chuẩn (Normal)
+
+.pull-left[
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+.pull-right[
+
+Tổng/trung bình các biến số ngẫu nhiên độc lập có cùng phân phối 
+
+Tham số: 
+
+* Trung bình: `\(\mu\)` ( `\(\in \mathbb{R}\)` )
+
+* Phương sai: `\(\sigma^2\)` ( `\(\in \mathbb{R}^+\)` )
+
+Phân phối chuẩn tắc (standard normal): phân phối chuẩn với trung bình `\(0\)` và phương sai `\(1\)` 
+
+]
+
+---
+
+## Phân phối Chi bình phương
+
+.pull-left[
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+.pull-right[
+
+Tổng bình phương của `\(k\)` biến số ngẫu nhiên độc lập có cùng phân phối chuẩn tắc 
+
+Tham số: 
+
+* Bậc tự do: `\(k\)` ( `\(\in \mathbb{R}^+\)` )
+
+]
+
+---
+
+## Phân phối Wilcoxon
+
+.pull-left[
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+.pull-right[
+
+Số cặp ( `\(x, y\)` ) sao cho `\(x \leq y\)` 
+
+Phi tham số: 
+
+* Cỡ mẫu mỗi nhóm
+
+]
+
+---
+class: inverse, center, middle
+
+# Các chỉ số thống kê
+
+---
+
+## Thống kê mô tả
+
+--
+
+.pull-left[
+
+&lt;img src="figures/sumerian_tablet1.png" width="400" style="display: block; margin: auto auto auto 0;" /&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="figures/sumerian_tablet2.png" width="400" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+]
+
+--
+
+
+Loại      | Năm 1 | Năm 2 | Năm 3 | Tổng
+----------|-------|-------|-------|-------
+Loại A    |     9 |    12 |    16 | 37
+Loại B    |    13 |    19 |    15 | 47
+Tổng cộng |    22 |    31 |    31 | 84
+
+
+---
+
+## Các chỉ số thống kê
+
+* Tần số (tỉ lệ phần trăm) (frequency, percentage)
+* Trung bình (mean)
+* Trung vị (median)
+* Yếu vị (mode) 
+* Giá trị nhỏ nhất (min)
+* Giá trị lớn nhất (max)
+
+---
+
+## Biến số liên tục
+
+Mô tả vị trí tập trung
+
+* Trung bình (mean)
+* Trung vị (median)
+* Yếu vị (mode) 
+
+Mô tả độ phân tán
+
+* Độ lệch chuẩn/phương sai
+* Khoảng tứ phân vị
+* Khoảng giá trị
+
+---
+
+# Lựa chọn chỉ số thống kê
+
+Phụ thuộc vào:
+
+* Tính chất (loại) biến số
+* Dạng phân phối của biến số
+* Mục đích
+
+---
+
+### Sống/Chết
+
+Chọn chỉ số nào ?
+
+---
+
+### Thang đo Likert
+
+Chọn chỉ số nào ?
+
+---
+
+### HCT trên bệnh nhân sốt xuất huyết
+
+&lt;img src="Slide_DTHUD_01_PPTK_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+
+--
+
+Chọn chỉ số nào ?
+
+---
+
+### Thang phá thành
+
+&lt;img src="figures/siege_ladder.jpg" width="600" style="display: block; margin: auto auto auto 0;" /&gt;
+
+--
+
+Chọn chỉ số nào ?
+
+---
+
+### Ước lượng "rod" (16 feet)
+
+&lt;img src="figures/community_rod.jpg" width="500" style="display: block; margin: auto auto auto 0;" /&gt;
+
+--
+
+Chọn chỉ số nào ?
+
+---
+
+# Trung bình hay trung vị?
+
+Trung bình
+
+* Tối ưu nếu dữ liệu có phân phối tương đối
+    + Đối xứng
+    + Không có đuôi quá dài hoặc giá trị ngoại lai (outlier)
+    
+* Hầu hết các mô hình và kiểm định thống kê dựa trên trung bình
+
+Trung vị
+
+* Rất gần trung bình khi dữ liệu có phân phối đối xứng
+* Nhỏ hơn trung bình khi dữ liệu bị lệch về bên phải
+* Vẫn có giá trị khi dữ liệu có giá trị ngoại lai
+
+---
+
+# So sánh
+
+.pull-left[
+_Vị trí tập trung_
+
+- Trung bình
+    + Phân phối đối xứng
+    + Bị ảnh hưởng bởi ngoại lai
+
+- Trung vị
+    + Phân phối không đối xứng
+    + Không bị ảnh hưởng bởi ngoại lai
+]
+
+.pull-right[
+_Độ phân tán_
+
+- Độ lệch chuẩn
+    + Phân phối đối xứng
+    + Khó diễn giải với dữ liệu bị lệch
+    
+- Khoảng giá trị
+    + Cỡ mẫu rất nhỏ
+    + Phụ thuộc vào cỡ mẫu
+
+- Khoảng tứ phân vị
+    + Mọi phân phối
+    + Ít ảnh hưởng bởi giá trị ngoại lai
+]
+
+--
+
+**Luôn luôn mô tả cả vị trí tập trung và độ phân tán**
+
+---
+class: inverse, center, middle
+
+# Kết luận
+
+---
+
+# Kết luận
+
+--
+
+Biến số: nhiều dạng, tuỳ theo bản chất và vai trò
+
+--
+
+Phân phối thống kê
+
+* Cơ hội (sai số ngẫu nhiên)
+* Là cơ sở cho các phân tích thống kê (mô tả và so sánh)
+* Các phân phối thống kê thường gặp
+
+--
+
+Các chỉ số thống kê
+
+* Nhiều dạng
+* Lựa chọn dựa vào: loại, phân phối, mục đích
+* Biến số liên tục: vị trí tập trung và độ phân tán
+
+---
+class: inverse, center, middle
+
+# Thực hành
+
+---
+
+## Bài tập 1
+
+### Mô tả tóm tắt đề tài nghiên cứu của các anh chị
+
+* 1 trang A4
+
+* Nội dung: câu hỏi nghiên cứu, mục tiêu nghiên cứu, đối tượng nghiên cứu, thiết kế nghiên cứu
+
+---
+
+## Bài tập 2
+
+### Liệt kê các biến số chính trong đề tài nghiên cứu của các anh chị
+
+* Bảng
+
+* Cột 1: tên biến số
+
+* Cột 2: định nghĩa biến số 
+
+* Cột 3: loại biến số
+
+* Cột 4: loại phân phối thống kê tương ứng
+
+* Cột 5: chỉ số thống kê phù hợp
+
+---
+class: center, middle
+
+# Cám ơn các anh chị đã theo dõi !
+
+Bài giảng này được lưu tại địa chỉ [**https://lampk.github.io/course_Epidemiology/**](https://lampk.github.io/course_Epidemiology/).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "4:3"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
