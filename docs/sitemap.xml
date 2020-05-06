@@ -28,10 +28,6 @@
   </url>
   
   <url>
-    <loc>https://lampk.github.io/course_Epidemiology/presentation/</loc>
-  </url>
-  
-  <url>
     <loc>https://lampk.github.io/course_Epidemiology/categories/</loc>
   </url>
   
@@ -45,6 +41,10 @@
   
   <url>
     <loc>https://lampk.github.io/course_Epidemiology/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lampk.github.io/course_Epidemiology/material/</loc>
   </url>
   
 </urlset>

@@ -31,16 +31,6 @@
     </item>
     
     <item>
-      <title>Bài giảng</title>
-      <link>https://lampk.github.io/course_Epidemiology/presentation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lampk.github.io/course_Epidemiology/presentation/</guid>
-      <description>[2020 - 05 - 06]
- Phân phối thống kê Kiểm định giả thuyết  </description>
-    </item>
-    
-    <item>
       <title>Chương trình (dự kiến)</title>
       <link>https://lampk.github.io/course_Epidemiology/agenda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -63,6 +53,18 @@ Lịch học dự kiến Ngày 06/05/2020
       
       <guid>https://lampk.github.io/course_Epidemiology/about/</guid>
       <description>Tổ chức Khoá học được tổ chức bởi Viện Pasteur TP Hồ Chí Minh.</description>
+    </item>
+    
+    <item>
+      <title>Tài liệu học</title>
+      <link>https://lampk.github.io/course_Epidemiology/material/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lampk.github.io/course_Epidemiology/material/</guid>
+      <description>[2020 - 05 - 06]
+ Bài giảng 1: Phân phối thống kê
+ Slide Nhận xét   Bài giảng 2: Kiểm định giả thuyết
+ Slide Nhận xét    </description>
     </item>
     
   </channel>

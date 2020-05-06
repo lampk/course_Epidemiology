@@ -39,8 +39,8 @@ pygmentsStyle = "vs"
     name = "Chương trình"
     weight = 2
   [[menu.main]]
-    url = "presentation/"
-    name = "Bài giảng"
+    url = "material/"
+    name = "Tài liệu học"
     weight = 3
 
   # Footer
