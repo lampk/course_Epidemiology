@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Dịch tễ học ứng dụng</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Phùng Khánh Lâm, BS, TS" />
+    <meta name="date" content="2020-05-20" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="lampk.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Dịch tễ học ứng dụng
+## PHÂN TÍCH TƯƠNG QUAN VÀ HỒI QUY
+### Phùng Khánh Lâm, BS, TS
+### </br> Bộ môn Dịch tễ học, Khoa Y tế công cộng, Đại học Y Dược TP Hồ Chí Minh
+### </br> 2020-05-20
+
+---
+
+
+
+
+
+
+
+
+# Nội dung
+
+* Phân tích tương quan
+
+    + Hệ số tương quan
+    + Biểu thị mối tương quan bằng biểu đồ
+
+* Phân tích hồi quy
+
+    + Mô hình hồi quy
+    + Hệ số hồi quy
+    + Phiên giải kết quả từ phân tích hồi quy
+    
+---
+class: inverse, center, middle
+
+# Thuật ngữ
+
+---
+
+## Tương quan (correlation) ???
+
+--
+
+* Mức độ mà các biến số liên tục thay đổi cùng nhau. Mức độ liên hệ giữa các biến số liên tục.
+
+--
+
+### Hệ số tương quan (correlation coefficient) ???
+
+--
+
+* Chỉ số có giá trị từ -1 đến 1 
+
+* Đo lường mức độ hai __*biến số liên tục*__ có __*mối quan hệ tuyến tính*__ với nhau.
+
+---
+
+## Hồi quy (regression) ???
+
+--
+
+* Phương pháp phân tích, mô hình (phương trình) toán học, mô tả __*biến số phụ thuộc*__ (y) theo một hoặc một vài __*biến số độc lập*__ (x) 
+
+--
+
+### Hồi quy tuyến tính (linear regression)
+
+--
+
+#### Đơn biến (univariable regression) ???
+
+`\(Y_i = b_0 + b_1 \times X_i + \epsilon_i\)`
+--
+
+#### Đa biến (multivariable regression) 
+
+`\(Y_i = b_0 + b_1 \times X_{1i} + b_2 \times X_{2i} + \ldots + b_p \times X_{pi} + \epsilon_i\)`
+
+---
+class: inverse, center, middle
+
+# Phân tích tương quan
+
+---
+
+## Ví dụ
+
+
+```
+##   studyno age    sex   wt resps hct outcome2
+## 1     400   9   male 23.0    24  42     dead
+## 2     401  13 female 43.0    24  48  survive
+## 3     402  10 female 24.5    24  50  survive
+## 4     403   6   male 19.0    24  49     dead
+## 5     404   8 female 25.0    24  47  survive
+## 6     405  12   male 34.0    20  43  survive
+```
+
+---
+
+# Hệ số tương quan
+
+--
+
+
+```r
+cor(dat$wt, dat$age, method = "pearson")
+```
+
+```
+## [1] 0.7572186
+```
+
+--
+
+
+```r
+cor.test(dat$wt, dat$age, method = "pearson")
+```
+
+```
+## 
+## 	Pearson's product-moment correlation
+## 
+## data:  dat$wt and dat$age
+## t = 26.181, df = 510, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.7176533 0.7919114
+## sample estimates:
+##       cor 
+## 0.7572186
+```
+
+---
+
+## Biểu thị mối tương quan bằng biểu đồ
+
+--
+
+
+```r
+plot(x = dat$age, y = dat$wt)
+```
+
+&lt;img src="Slide_DTHUD_03_TQHQ_files/figure-html/age_wt-1.png" width="450" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Biểu thị mối tương quan bằng biểu đồ
+
+&lt;img src="figures/Correlation_examples2.svg" width="1000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+Wikipedia: https://upload.wikimedia.org/wikipedia/commons/d/d4/Correlation_examples2.svg
+]
+
+---
+class: inverse, center, middle
+
+# Phân tích hồi quy
+
+---
+
+## Mô hình hồi quy
+
+--
+
+### Phương trình hồi quy
+
+`$$Y = b_0 + b_1 \times X$$`
+
+--
+
+### Hệ số hồi quy
+
+* `\(b_0\)`
+
+* `\(b_1\)`
+
+---
+
+## Mô hình hồi quy đơn biến
+
+--
+
+Một biến số độc lập
+
+`$$Y = b_0 + b_1 \times X$$`
+
+--
+
+### `\(b_1\)` ???
+
+--
+
+Thay đổi của `\(Y\)` khi `\(X\)` tăng lên 1 đơn vị
+
+---
+
+## Mô hình hồi quy đơn biến
+
+&lt;img src="figures/models_01.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+Thuy Le et al. (2011) CID, 52(7):945–52.
+]
+
+---
+
+## Mô hình hồi quy đơn biến
+
+&lt;img src="figures/models_02.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+Thuy Le et al. (2011) CID, 52(7):945–52.
+]
+
+---
+
+## Mô hình hồi quy đa biến
+
+Từ hai biến số độc lập trở lên
+
+$$Y = b_0 + b_1 \times X_1 + b_2 \times X_2 $$
+
+--
+
+### `\(b_1\)` ???
+
+--
+
+Thay đổi của `\(Y\)` khi `\(X_1\)` tăng lên 1 đơn vị &amp; `\(X_2\)` giữ nguyên
+
+--
+
+### `\(b_2\)` ???
+
+--
+
+Thay đổi của `\(Y\)` khi `\(X_2\)` tăng lên 1 đơn vị &amp; `\(X_1\)` giữ nguyên
+
+---
+
+## Mô hình hồi quy đa biến
+
+&lt;img src="figures/models_03.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+Thuy Le et al. (2011) CID, 52(7):945–52.
+]
+
+---
+
+## Mô hình hồi quy đa biến
+
+&lt;img src="figures/models_04.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+Thuy Le et al. (2011) CID, 52(7):945–52.
+]
+
+---
+
+## Mô hình hồi quy đa biến (SPSS)
+
+&lt;img src="figures/models_05.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+https://www.spss-tutorials.com/linear-regression-in-spss-example/
+]
+
+---
+
+## Mô hình hồi quy đa biến (Stata)
+
+&lt;img src="figures/models_06.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+https://stats.idre.ucla.edu/stata/output/regression-analysis-2/
+]
+
+---
+
+## Mô hình hồi quy đa biến (R)
+
+&lt;img src="figures/models_07.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+https://stats.idre.ucla.edu/r/dae/logit-regression/
+]
+
+---
+
+## Các mô hình thống kê thường gặp
+
+--
+
+|  Biến số phụ thuộc                    | Mô hình thường dùng  |
+|:-------------------------------------:|:--------------------:|
+| Liên tục                              | Hồi quy tuyến tính   | 
+|                                       |                      |
+| Nhị giá                               | Hồi quy logistic     |
+|                                       |                      |
+| Số đếm                                | Hồi quy Poisson      |
+|                                       |                      |
+| Thời gian sống còn                    | Hồi quy Cox          |
+
+---
+
+## Giả định của các mô hình thống kê thường gặp
+
+--
+
+* Additivity
+
+* Linearity
+
+---
+
+## Giả định của các mô hình thống kê thường gặp
+
+&lt;img src="Slide_DTHUD_03_TQHQ_files/figure-html/anscombe-1.png" width="450" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+
+.footnote[
+Anscombe FJ (1973) Am Stat,27(1):17–21. 
+]
+
+---
+class: inverse, center, middle
+
+# Tóm tắt
+
+---
+
+## Khi nào phân tích tương quan?
+
+--
+
+* Muốn đo lường mức độ __*liên hệ tuyến tính*__ giữa hai __*biến số liên tục*__.
+
+--
+
+## Khi nào phân tích hồi quy?
+
+--
+
+* Muốn đo lường mức độ __*ảnh hưởng*__ của các __*biến số độc lập*__ lên __*biến số phụ thuộc*__.
+
+--
+
+* Muốn tiên đoán giá trị của __*biến số phụ thuộc*__ dựa trên giá trị của các __*biến số độc lập*__
+
+---
+
+## Kiểm định thống kê vs. Mô hình hồi quy
+
+--
+
+.pull-left[
+
+#### Phép kiểm thống kê
+
+* Kết quả:
+    + Bác bỏ/chấp nhận giả thuyết thống kê (p)
+    
+* Không cho phép hiệu chỉnh cho các yếu tố gây nhiễu
+
+* Giả định: 
+    + Phân phối của biến số
+]
+
+.pull-right[
+
+#### Mô hình hồi quy
+
+* Kết quả:
+    + Bác bỏ/chấp nhận GTTK (p)
+    + Độ lớn của mối liên hệ (KTC)
+    + Phương trình hồi quy
+    
+* Hiệu chỉnh cho các yếu tố gây nhiễu
+    
+* Giả định:
+    + Phân phối của biến số phụ thuộc
+    + Mối liên hệ giữa các biến số
+]
+
+---
+class: inverse, center, middle
+
+# Thực hành
+
+---
+
+## Bài tập 1
+
+### Liệt kê các phân tích từ câu hỏi nghiên cứu của các anh chị
+
+* Bảng
+
+* Cột 1: Câu hỏi nghiên cứu
+
+* Cột 2: Biến số phụ thuộc (Y)
+
+* Cột 3: Biến số độc lập (X)
+
+* Cột 4: Kiểm định giả thuyết, phân tích tương quan hay hồi quy
+
+* Cột 5: Phương pháp cụ thể
+
+* Cột 6: Lý giải
+
+---
+class: center, middle
+
+# Cám ơn các anh chị đã theo dõi !
+
+Bài giảng này được lưu tại địa chỉ 
+
+[**https://lampk.github.io/course_Epidemiology/**](https://lampk.github.io/course_Epidemiology/).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "4:3"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
