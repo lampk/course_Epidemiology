@@ -25,3 +25,11 @@ title: Tài liệu học
 
     + [Slide](https://lampk.github.io/course_Epidemiology/slides/Slide_DTHUD_03_TQHQ.html)
     
+[2020-05-27]
+
+* Bài giảng 6: Thiết kế nghiên cứu - Phân tích dữ liệu
+
+    + [Slide](https://lampk.github.io/course_Epidemiology/slides/Slide_DTHUD_04_TKNC.html)
+    + [Nhận xét](https://forms.gle/V5ZeH4hCogkwSQhz7)
+    
+    
